@@ -1,0 +1,77 @@
+time curl -X POST --header "Content-Type:application/json" -d '{"login":"dehp1@datalogics.com", "password": "password"}' http://rd02.datalogics.com/login.json
+{"auth_token":"E70Wn5457dTQHWwMzMlXVQ"}
+
+curl -b GET 'auth_token=E70Wn5457dTQHWwMzMlXVQ;' http://rd02.datalogics.com/portal/api/books/41
+curl -X GET --header "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ"}' http://rd02.datalogics.com/users/9
+XXXXXXXXXXXXX
+curl -X GET --header "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ"}' http://rd02.datalogics.com/app/views/portal/api/groups/index.json.rabl
+
+curl -X POST -H "Content-Type:application/json" -d "{"account_type":"student", "user": "test_sign_a", "user[full_name]": "test_sign_a", "user[preferred_name]": "test_sign_a", "user[email]": "test_sign_a@datalogics.com", "user[password]": "password", "user[password_confirmation]": "password"}" http://rd02.datalogics.com/users.json
+
+curl -X POST -H "Content-Type:application/json" -d '{"account_type":"student", "user": {"full_name": "test_sign_a", "preferred_name": "test_sign_a", "email": "test_sign_a@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rd02.datalogics.com/users.json
+
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"account_type":"student", "user": {"full_name": "test_sign_a", "preferred_name": "test_sign_a", "email": "test_sign_a@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rd02.datalogics.com/users.json
+
+{"error_message":{},"error":{},"error_code":""}
+
+
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_a", "preferred_name": "test_sign_a", "email": "test_sign_a@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rdqa3.datalogics.com/users.json
+curl -X POST --header "Content-Type:application/json" -d '{"login":"admin@readynamic.com", "password": "password"}' http://rdqa3.datalogics.com/login.json
+{"auth_token":"_3sOBGAEPqXQFsmRfdKnQA"}
+
+
+
+tail="@datalogics.com"
+for i in 2 3
+do
+	name="test_sign_"
+	name+=$i
+	email=$name
+	email+=$tail
+	time curl -X POST -H "Content-Type:application/json" -d "{\"auth_token\":\"E70Wn5457dTQHWwMzMlXVQ\", \"account_type\":\"student\", \"user\": {\"full_name\": \"$name\", \"preferred_name\": \"$name\", \"email\": \"$email\", \"password\": \"password\", \"password_confirmation\": \"password\"}}" http://rdqa3.datalogics.com/users.json;
+	echo " "
+done
+
+
+curl -X POST -H "Content-Type:application/json" -d "{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_b", "preferred_name": "test_sign_b", "email": "test_sign_b@datalogics.com", "password": "password", "password_confirmation": "password"}}" http://rdqa3.datalogics.com/users.json
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_c", "preferred_name": "test_sign_c", "email": "test_sign_c@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rdqa3.datalogics.com/users.json
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_c", "preferred_name": "test_sign_c", "email": "test_sign_c@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rdqa3.datalogics.com/users.json
+
+curl -X POST --header "Content-Type:application/json" -d '{"login":"test_sign_3@datalogics.com", "password": "password"}' http://rdqa3.datalogics.com/login.json
+curl -X GET -H "Content-Type:application/json" -d "{\"auth_token\":\"PBavk_tc8O0dpi38Nq-olw\", \"email\":\"test_sign_3@datalogics.com\"}" http://rdqa3.datalogics.com/users.json;
+
+
+
+
+
+tail="@datalogics.com"
+for i in 2 3
+do
+	name="test_sign_"
+	name+=$i
+	email=$name
+	email+=$tail
+	time curl -X POST -H "Content-Type:application/json" -d "{\"auth_token\":\"E70Wn5457dTQHWwMzMlXVQ\", \"account_type\":\"student\", \"user\": {\"full_name\": \"$name\", \"preferred_name\": \"$name\", \"email\": \"$email\", \"password\": \"password\", \"password_confirmation\": \"password\"}}" http://rdqa3.datalogics.com/users.json;
+	echo " "
+done
+
+
+curl -X POST -H "Content-Type:application/json" -d "{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_b", "preferred_name": "test_sign_b", "email": "test_sign_b@datalogics.com", "password": "password", "password_confirmation": "password"}}" http://rdqa3.datalogics.com/users.json
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_c", "preferred_name": "test_sign_c", "email": "test_sign_c@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rdqa3.datalogics.com/users.json
+
+
+curl -X POST -H "Content-Type:application/json" -d '{"auth_token":"E70Wn5457dTQHWwMzMlXVQ", "account_type":"student", "user": {"full_name": "test_sign_c", "preferred_name": "test_sign_c", "email": "test_sign_c@datalogics.com", "password": "password", "password_confirmation": "password"}}' http://rdqa3.datalogics.com/users.json
+
+
+curl -X GET -H "Content-Type:application/json" -d "{\"auth_token\":\"E70Wn5457dTQHWwMzMlXVQ\", \"email\":\"test_sign_3@datalogics.com\"}" http://rdqa3.datalogics.com/users.json;
+	echo " "

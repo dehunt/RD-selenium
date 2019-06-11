@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="rdSeleniumTests.rdStuReaderPdfToEpub">
+        <methods>
+          <include name="openPdf"/>
+          <include name="nextPagePdf"/>
+          <include name="userLoginPdf"/>
+          <include name="chapterNavPdf"/>
+          <include name="setUp"/>
+          <include name="prevPagePdf"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- rdSeleniumTests.rdStuReaderPdfToEpub -->
+    </classes>
+  </test> <!-- chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

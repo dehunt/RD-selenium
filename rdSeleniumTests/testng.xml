@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- NOTE: run selenium_prep.sh and manually assign test books to student user before executing this file -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false" thread-count="1">
+  <test name="chrome">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+<!--      <class name="rdSeleniumTests.rdAdminConsole"/>
+      <class name="rdSeleniumTests.rdPublisherBookManagement"/>
+      <class name="rdSeleniumTests.rdStuReaderEpub2"/>
+      <class name="rdSeleniumTests.rdStuReaderEpub3"/>
+      <class name="rdSeleniumTests.rdStuReaderPdfToBitmap"/>
+      <class name="rdSeleniumTests.rdStuReaderPdfToEpub" /> -->
+      <class name="rdSeleniumTests.rdPublisherContacts"/>
+<!--      <class name="rdSeleniumTests.rdPubOverlays"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

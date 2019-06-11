@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="28860" started-at="2018-09-06T19:57:43Z" finished-at="2018-09-06T19:58:12Z">
+    <groups>
+      <group name="openBook">
+        <method signature="rdStuReaderPdfToEpub.openPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="openPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+      </group> <!-- openBook -->
+      <group name="bookNav">
+        <method signature="rdStuReaderPdfToEpub.chapterNavPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="chapterNavPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.nextPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="nextPagePdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.prevPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="prevPagePdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+      </group> <!-- bookNav -->
+      <group name="pdf">
+        <method signature="rdStuReaderPdfToEpub.openPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="openPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.chapterNavPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="chapterNavPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.nextPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="nextPagePdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.prevPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="prevPagePdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+      </group> <!-- pdf -->
+      <group name="baseline">
+        <method signature="rdStuReaderPdfToEpub.userLoginPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="userLoginPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.openPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="openPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.chapterNavPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="chapterNavPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.nextPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="nextPagePdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+        <method signature="rdStuReaderPdfToEpub.prevPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="prevPagePdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+      </group> <!-- baseline -->
+      <group name="login">
+        <method signature="rdStuReaderPdfToEpub.userLoginPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="userLoginPdf" class="rdSeleniumTests.rdStuReaderPdfToEpub"/>
+      </group> <!-- login -->
+    </groups>
+    <test name="chrome" duration-ms="28860" started-at="2018-09-06T19:57:43Z" finished-at="2018-09-06T19:58:12Z">
+      <class name="rdSeleniumTests.rdStuReaderPdfToEpub">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="setUp" is-config="true" duration-ms="1737" started-at="2018-09-06T14:57:43Z" finished-at="2018-09-06T14:57:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="userLoginPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="userLoginPdf" duration-ms="2422" started-at="2018-09-06T14:57:44Z" finished-at="2018-09-06T14:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLoginPdf -->
+        <test-method status="PASS" signature="openPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="openPdf" duration-ms="3762" started-at="2018-09-06T14:57:47Z" depends-on-methods="rdSeleniumTests.rdStuReaderPdfToEpub.userLoginPdf" finished-at="2018-09-06T14:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openPdf -->
+        <test-method status="PASS" signature="chapterNavPdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="chapterNavPdf" duration-ms="9867" started-at="2018-09-06T14:57:51Z" depends-on-methods="rdSeleniumTests.rdStuReaderPdfToEpub.openPdf" finished-at="2018-09-06T14:58:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chapterNavPdf -->
+        <test-method status="PASS" signature="nextPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="nextPagePdf" duration-ms="3795" started-at="2018-09-06T14:58:01Z" depends-on-methods="rdSeleniumTests.rdStuReaderPdfToEpub.chapterNavPdf" finished-at="2018-09-06T14:58:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nextPagePdf -->
+        <test-method status="PASS" signature="prevPagePdf()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="prevPagePdf" duration-ms="5024" started-at="2018-09-06T14:58:04Z" depends-on-methods="rdSeleniumTests.rdStuReaderPdfToEpub.chapterNavPdf" finished-at="2018-09-06T14:58:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prevPagePdf -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:rdSeleniumTests.rdStuReaderPdfToEpub@224edc67]" name="quitDriver" is-config="true" duration-ms="2215" started-at="2018-09-06T14:58:09Z" finished-at="2018-09-06T14:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- rdSeleniumTests.rdStuReaderPdfToEpub -->
+    </test> <!-- chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
